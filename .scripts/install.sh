@@ -1,3 +1,4 @@
+#!/bin/sh
 # install.sh
 # ------------------------------
 # checkout dotfiles and install needed package
