@@ -2,4 +2,4 @@
 	email = tom.legougaud@gmail.com
 	name = thomas-lg
 [credential]
-	helper = cache
+	helper = store
