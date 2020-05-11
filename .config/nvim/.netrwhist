@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/thomas-lg/projects/emotic/angular-test-demo/src/app'
 let g:netrw_dirhist_2='/home/thomas-lg/projects/emotic/angular-test-demo/src/app/containers'
 let g:netrw_dirhist_3='/home/thomas-lg/projects/emotic/angular-test-demo/src/app/containers/home'
+let g:netrw_dirhist_4='/home/thomas-lg/.local/share'
+let g:netrw_dirhist_5='/home/thomas-lg/.local/share/nvim'
+let g:netrw_dirhist_6='/home/thomas-lg/.local/share/nvim/site'
+let g:netrw_dirhist_7='/home/thomas-lg/.local/share/nvim/site/autoload'

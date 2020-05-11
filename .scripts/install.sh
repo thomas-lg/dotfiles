@@ -27,6 +27,18 @@ config checkout
 config config status.showUntrackedFiles no
 #-/checkout
 
+source .zshrc
+
+#-install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+#-/install nvm 
+
+#-install nvim plugins
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+	       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+nvim +PlugInstall
+#-/install nvim plugins
+
 #-install nerdfonts
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts .nerd-fonts
 ./.nerd-fonts/install.sh
