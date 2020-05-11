@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/thomas-lg/projects/emotic/angular-test-demo/src/app'
+let g:netrw_dirhist_2='/home/thomas-lg/projects/emotic/angular-test-demo/src/app/containers'
+let g:netrw_dirhist_3='/home/thomas-lg/projects/emotic/angular-test-demo/src/app/containers/home'
