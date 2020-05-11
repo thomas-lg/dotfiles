@@ -2,7 +2,7 @@
 # install.sh
 # ------------------------------
 # checkout dotfiles and install needed package
-source ./debian-packages
+sudo apt -y install curl wget git zsh nvim fd python-pip 
 
 #-checkout
 git clone --bare https://github.com/thomas-lg/dotfiles.git $HOME/.dotfiles
