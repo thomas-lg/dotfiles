@@ -1,7 +1,7 @@
 # install.sh
 # ------------------------------
 # checkout dotfiles and install needed package
-source $HOME/.config/debian-packages
+source ./debian-packages
 
 #-checkout
 git clone --bare https://github.com/thomas-lg/dotfiles.git $HOME/.dotfiles
