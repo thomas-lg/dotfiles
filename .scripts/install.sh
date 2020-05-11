@@ -2,7 +2,13 @@
 # install.sh
 # ------------------------------
 # checkout dotfiles and install needed package
-sudo apt -y install curl wget git zsh nvim fd python-pip 
+
+#-debian specific
+sudo apt -y install curl wget git zsh neovim fd-find python-pip 
+
+#-install ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+#-/install ohmyzsh
 
 #-checkout
 git clone --bare https://github.com/thomas-lg/dotfiles.git $HOME/.dotfiles
@@ -21,15 +27,8 @@ config checkout
 config config status.showUntrackedFiles no
 #-/checkout
 
-#-install ohmyzsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-#-/install ohmyzsh
-
-#-install powerlinefonts
-pip install --user powerline-status
-#/-install powerlinefonts
-
 #-install nerdfonts
-
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts .nerd-fonts
+./.nerd-fonts/install.sh
 #-/install nerdfonts
 
