@@ -6,7 +6,7 @@ source ./debian-packages
 
 #-checkout
 git clone --bare https://github.com/thomas-lg/dotfiles.git $HOME/.dotfiles
-function config {
+function config() {
 	/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
 mkdir -p .dotfiles-backup
